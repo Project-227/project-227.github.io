@@ -405,6 +405,19 @@
       });
     })();
     </script>
+    <script>
+        // Handle the Mobile Menu toggle
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('active');
+        });
 
+        // Close the menu when a user clicks a link (so it doesn't stay open)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
