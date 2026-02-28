@@ -849,7 +849,7 @@ footer {
 /* Shrink slideshow and video on mobile */
 @media (max-width: 768px) {
     #gordonSlideContainer {
-        height: 250px !important;
+        height: 180px !important;
     }
 }
 
@@ -876,4 +876,19 @@ footer {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .speaker-card > div[style*="padding-bottom"] {
+        padding-bottom: 42% !important;
+        max-width: 100%;
+    }
+
+    .speaker-card {
+        padding: 1.25rem;
+    }
+
+    .speakers-grid {
+        grid-template-columns: 1fr;
+    }
 }
