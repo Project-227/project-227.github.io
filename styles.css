@@ -816,6 +816,7 @@ footer {
     .btn-primary, .btn-secondary { width: 100%; justify-content: center; }
     .conference-details { flex-direction: column; gap: 1rem; }
     .businesses-grid { grid-template-columns: 1fr; }
+    
 }
 
 @media (max-width: 480px) {
@@ -851,6 +852,11 @@ footer {
     #gordonSlideContainer {
         height: 180px !important;
     }
+    .video-wrapper {
+        max-width: 280px !important;
+        margin: 0 auto !important;
+        padding-bottom: 42% !important;
+    }
 }
 
 .speaker-card iframe {
@@ -879,16 +885,30 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .speaker-card > div[style*="padding-bottom"] {
-        padding-bottom: 42% !important;
-        max-width: 100%;
-    }
-
     .speaker-card {
         padding: 1.25rem;
     }
 
     .speakers-grid {
         grid-template-columns: 1fr;
+    }
+
+    /* Slideshow width fix */
+    #gordonSlideContainer {
+        height: 180px !important;
+        max-width: 280px !important;
+        margin: 0 auto !important;
+    }
+
+    #gordonThumbs {
+        max-width: 280px;
+        margin: 8px auto 0;
+    }
+
+    /* YouTube video fix */
+    .speaker-card iframe {
+        max-width: 280px !important;
+        display: block;
+        margin: 0 auto;
     }
 }
