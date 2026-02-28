@@ -912,3 +912,17 @@ footer {
         margin: 0 auto;
     }
 }
+
+/* Desktop */
+.video-wrapper {
+    padding-bottom: 56.25%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .video-wrapper {
+        max-width: 280px !important;
+        margin: 0 auto !important;
+        padding-bottom: 42% !important;
+    }
+}
